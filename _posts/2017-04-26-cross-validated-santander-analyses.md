@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cross validated Santander Analyses"
+title: "cross-validated-santander-analyses"
 date: 2017-04-26
 ---
 
