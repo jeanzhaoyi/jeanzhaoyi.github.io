@@ -1,4 +1,8 @@
-
+---
+layout: post
+title: "Kaggle_predict_Santander_customer_satisfaction"
+date: 2017-5-3
+---
 # Predict Santander Customer Satisfaction
 ***
 
