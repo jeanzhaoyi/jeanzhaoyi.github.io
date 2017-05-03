@@ -1117,12 +1117,12 @@ ConfusionMatrix(y_true = y_test, y_pred = prob_test[:,1]>0.66)
 ```
 
 
-   |Predicted  | False |  True | __all__|
-   | Actual    |   
-   | --------- |:-----:|:-----:|:------:|                  
+   |Predicted  | False |  True | Total  |
+   | Actual    |------------------------|  
+   | --------- |:-----:|:-----:|-------:|                  
    | False     | 16025 | 2233  | 18258  |
    | True      |   358 |  389  |    747 |
-   | __all__   | 16383 |2622   |  19005 |
+   | Total     | 16383 |2622   |  19005 |
     
 <div class = "span5 alert alert-info">
 <li> After bootstraping the optimal treshold that maximizes f1-score has increased from 8% to 66%, 
