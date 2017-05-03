@@ -448,7 +448,7 @@ print('MinMax scalled Logistic Regression\n mean ROC AUC score: \n',
 ```
 
 
-![alt text](https://github.com/jeanzhaoyi/jeanzhaoyi.github.io/images/output_27_0.png)
+![alt text](images/output_27_0.png)
 
 
     MinMax scalled Logistic Regression
@@ -476,10 +476,6 @@ ConfusionMatrix(y_true = y_test, y_pred = pred_test)
 ```
 
     Scaled Logistic regression AUC score:  0.777781223847
-
-
-
-
 
     Predicted     0  1  __all__
     Actual               
@@ -533,12 +529,11 @@ ConfusionMatrix(y_true = y_test, y_pred = prob_test[:,1]>0.08)
 
 
 
-    Predicted | False | True  |__all__
-    Actual   | 
-    --- | --- | --- | ---                     
-    False    |  16255 | 2003  |  18258
-    True     |    368  | 379    |  747
-    __all__  |  16623  |2382   | 19005
+    Predicted  False  True  __all__
+    Actual                     
+    False      16255  2003    18258
+    True         368   379      747
+    __all__    16623  2382    19005
 
 
 
@@ -859,10 +854,12 @@ print('MinMax scalled Gradient Boosting Classifier (max_depth = 10)\n mean ROC A
      0.728726317078
 
 
+
 <div class = "span5 alert alert-info">
 <li>smaller max_depth led to a worse result</li>
 <li>Increasing the number of maximum depth in boosted regression trees did not lead to better result.</li>
 </div>
+
 #### c. XGBoost Classifier
 
 
@@ -1070,12 +1067,11 @@ ConfusionMatrix(y_true = y_test, y_pred = pred_test)
 
 
 
-    Predicted  |    0    | 1  |__all__
-    Actual     |
-    --- | --- | --- | ---                    
-    0         | 12271 | 5987 |   18258
-    1         |   203 | 544  |    747
-    __all__   | 12474 | 6531 |  19005
+    Predicted     0     1  __all__
+    Actual                     
+    0          12271  5987    18258
+    1            203  544      747
+    __all__    12474  6531   19005
 
 
 
@@ -1119,19 +1115,13 @@ plt.show()
 ConfusionMatrix(y_true = y_test, y_pred = prob_test[:,1]>0.66)
 
 ```
-
-
-
-
-    Predicted | False | True | __all__
+   Predicted | False | True | __all__
     Actual    |   
     --- | --- | --- | ---                  
     False     | 16025  |2233 |   18258
     True      |   358 |  389  |    747
     __all__   | 16383  |2622  |  19005
-
-
-
+    
 <div class = "span5 alert alert-info">
 <li> After bootstraping the optimal treshold that maximizes f1-score has increased from 8% to 66%, 
 but the highest F-1 score is no different from without any resampling</li>
