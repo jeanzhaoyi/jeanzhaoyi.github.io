@@ -481,12 +481,11 @@ ConfusionMatrix(y_true = y_test, y_pred = pred_test)
 
 
 
-    Predicted |     0  |1 | __all__
-    Actual  |     
-    --- | --- | --- | ---               
-    0       |   18256 | 2  |  18258
-    1       |     747  |0   |   747
-    __all__ |   19003  |2   | 19005
+    Predicted     0  1  __all__
+    Actual               
+    0          18256  2    18258
+    1            747  0      747
+    __all__    19003  2    19005
 
 
 
@@ -520,12 +519,6 @@ plt.savefig('Precion_recall_LR.jpeg')
 plt.show()
 
 ```
-
-    /Users/yizhao/anaconda3/lib/python3.5/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples.
-      'precision', 'predicted', average, warn_for)
-    /Users/yizhao/anaconda3/lib/python3.5/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
-      'precision', 'predicted', average, warn_for)
-
 
 
 ![alt text](https://github.com/jeanzhaoyi/jeanzhaoyi.github.io/images/output_29_1.png)
