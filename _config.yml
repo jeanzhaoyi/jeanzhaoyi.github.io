@@ -1,4 +1,4 @@
 name: Yi Zhao, Santander Customer Satisfaction
-markdown: cv_markdown
+markdown: kramdown
 
 theme: jekyll-theme-minimal
