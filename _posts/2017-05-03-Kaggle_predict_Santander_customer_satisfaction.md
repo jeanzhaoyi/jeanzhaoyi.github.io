@@ -448,7 +448,7 @@ print('MinMax scalled Logistic Regression\n mean ROC AUC score: \n',
 ```
 
 
-![alt text](images/output_27_0.png)
+![jeanzhaoyi](https://github.com/jeanzhaoyi/jeanzhaoyi.github.io/images/output_27_0.png)
 
 
     MinMax scalled Logistic Regression
