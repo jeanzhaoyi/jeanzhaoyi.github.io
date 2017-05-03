@@ -448,7 +448,7 @@ print('MinMax scalled Logistic Regression\n mean ROC AUC score: \n',
 ```
 
 
-![jeanzhaoyi](https://github.com/jeanzhaoyi/jeanzhaoyi.github.io/images/output_27_0.png)
+![jeanzhaoyi](https://github.com/jeanzhaoyi/jeanzhaoyi.github.io/blob/master/images/output_27_0.png)
 
 
     MinMax scalled Logistic Regression
@@ -517,7 +517,7 @@ plt.show()
 ```
 
 
-![alt text](https://github.com/jeanzhaoyi/jeanzhaoyi.github.io/images/output_29_1.png)
+![alt text](https://github.com/jeanzhaoyi/jeanzhaoyi.github.io/blob/master/images/output_29_1.png)
 
 
 
@@ -698,7 +698,7 @@ print('MinMax scaled chi2 top 100 features\n Bernouli Naive Bayes\n mean ROC AUC
 ```
 
 
-![alt text](https://github.com/jeanzhaoyi/jeanzhaoyi.github.io/images/output_45_0.png)
+![alt text](https://github.com/jeanzhaoyi/jeanzhaoyi.github.io/blob/master/images/output_45_0.png)
 
 
     MinMax scalled chi2 top 100 features
@@ -869,7 +869,7 @@ print('XGBoost\n mean ROC AUC score: \n',
 ```
 
 
-![alt text](https://github.com/jeanzhaoyi/jeanzhaoyi.github.io/images/output_56_0.png)
+![alt text](https://github.com/jeanzhaoyi/jeanzhaoyi.github.io/blob/master/images/output_56_0.png)
 
 
     XGBoost
@@ -971,7 +971,7 @@ plt.show()
 
 
 
-![alt text](https://github.com/jeanzhaoyi/jeanzhaoyi.github.io/images/output_60_1.png)
+![alt text](https://github.com/jeanzhaoyi/jeanzhaoyi.github.io/blob/master/images/output_60_1.png)
 
 
 
@@ -1107,7 +1107,7 @@ plt.show()
 ```
 
 
-![alt text](https://github.com/jeanzhaoyi/jeanzhaoyi.github.io/images/output_67_0.png)
+![alt text](https://github.com/jeanzhaoyi/jeanzhaoyi.github.io/blob/master/images/output_67_0.png)
 
 
 
