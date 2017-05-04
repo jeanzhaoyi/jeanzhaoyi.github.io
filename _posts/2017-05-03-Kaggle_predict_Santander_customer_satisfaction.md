@@ -78,98 +78,6 @@ train_raw.groupby('TARGET').size()
 
 
 
-```python
-train_raw.groupby('var3').size()
-```
-
-
-
-
-    var3
-    -999999      116
-     0            75
-     1           105
-     2         74165
-     3           108
-     4            86
-     5            63
-     6            82
-     7            97
-     8           138
-     9           110
-     10           72
-     11           66
-     12           85
-     13           98
-     14           61
-     15           34
-     16            9
-     17            7
-     18           10
-     19            3
-     20            6
-     21            4
-     22            5
-     23            7
-     24            5
-     25            6
-     26            3
-     27            4
-     28            4
-               ...  
-     193           1
-     194           1
-     195           3
-     196           1
-     197           2
-     198           2
-     199           1
-     200           1
-     201           2
-     204           2
-     205           1
-     207           2
-     208           2
-     209           4
-     210           1
-     211           1
-     213           1
-     215           1
-     216           3
-     217           3
-     218           1
-     219           1
-     220           1
-     223           1
-     225           1
-     228           1
-     229           1
-     231           1
-     235           1
-     238           1
-    dtype: int64
-
-
-
-
-```python
-train_raw.groupby('var36').size()
-
-```
-
-
-
-
-    var36
-    0       411
-    1     14664
-    2      8704
-    3     22177
-    99    30064
-    dtype: int64
-
-
-
 <div class = "span5 alert alert-info">
 Categorical variables usually have a much smaller number of unique values than numerical variables.
 Without prior information on which variables were categorical, there needs to be an arbitratry threhold set to distinguish categorical from numerical variables.
@@ -215,7 +123,7 @@ print(muted.shape)
 
 
 <div class = "span5 alert alert-info">
-<p>After taking all feature transformation, there were 76020 observations and 848 predictive features used.</p>
+<p>After taking all feature transformation, there were 76020 observations and 848 predictive features used when 20 is the threshold of the a minimum number of unique values to be considered a numerical varaible.</p>
 
 <p>Before running any models, first set up a stratified kfold cross-validation to evaluate classifiers systematically. </p>
 </div>
@@ -448,7 +356,7 @@ print('MinMax scalled Logistic Regression\n mean ROC AUC score: \n',
 ```
 
 
-![jeanzhaoyi](https://github.com/jeanzhaoyi/jeanzhaoyi.github.io/blob/master/images/output_27_0.png)
+![alt img](https://github.com/jeanzhaoyi/jeanzhaoyi.github.io/blob/master/images/output_27_0.png)
 
 
     MinMax scalled Logistic Regression
@@ -517,7 +425,7 @@ plt.show()
 ```
 
 
-![alt text](https://github.com/jeanzhaoyi/jeanzhaoyi.github.io/blob/master/images/output_29_1.png)
+![alt curves](https://github.com/jeanzhaoyi/jeanzhaoyi.github.io/blob/master/images/output_29_1.png)
 
 
 
@@ -1003,7 +911,7 @@ ConfusionMatrix(y_true = y_test, y_pred = prob_test[:,1]>0.13)
 
 
 
-<div class = "span5 alert alert-info">
+<div>
 Recall always increases with a decreasing probability threshold for predicting as positive.
 <ul>
     <li>The number of False Positives is less alarming, because trying to improve service to those that were not going to leave wouldn't hurt. Falsely ignoring the dissatisfied customers, however, would be much more hurtful. </li>
@@ -1133,7 +1041,7 @@ Thus, there is no added benefits from resampling the training set.
 
 ## IV. Conclusion
 ***
-<div class = "span5 alert alert-info">
+<div>
 Given an anonymized dataset with no information of observations and predictor variables, transformation of those predictor variables is crucial to building high performance predictive models. In this analysis, variables with less than 20 unique values out of 76K observations were considered to be categorical and transformed into binary formats. 
 
 <p> Overall, a simple logistic regression predicts dissatisfied customers of Santander’s at a reasonable accuracy level, outperforming Naïve Bayes and Random Forest models. The extreme gradient ensemble classifier has a better performance overall model performance in terms of AUC and f1-score, but the recall rate is no better than logistic regression. </p>
@@ -1142,6 +1050,3 @@ Given an anonymized dataset with no information of observations and predictor va
 </div>
 
 
-```python
-
-```
